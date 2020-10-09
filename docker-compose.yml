@@ -15,3 +15,12 @@ services:
       - '8080:8080'
     links:
       - 'db'
+
+  app:
+    build: ./app
+    volumes:
+      - '/tmp:/tmp'
+    environment:
+      - NODE_ENV=production
+    ports:
+      - '8081:80'

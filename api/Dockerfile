@@ -1,6 +1,4 @@
-FROM alpine:latest
-
-RUN apk add nodejs npm git
+FROM node:12
 
 WORKDIR /app
 
