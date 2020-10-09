@@ -8,8 +8,10 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN npm build-ts
+
 COPY . /app
 
-CMD ["node", "./bin/www"]
+CMD ["node", "./dist/server.js"]
 
 EXPOSE 8080 8080

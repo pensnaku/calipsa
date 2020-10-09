@@ -11,11 +11,6 @@ export const NODE_ENV = ensureVariableExists(
 
 export const APP_PORT = ensureVariableExists(process.env.APP_PORT, 'APP PORT');
 
-export const MONGO_URL = ensureVariableExists(
-  process.env.MONGO_URL,
-  'MONGO URL',
-);
-
 export const TOKEN_SECRET = ensureVariableExists(
   process.env.TOKEN_SECRET,
   'SECRET TOKEN',

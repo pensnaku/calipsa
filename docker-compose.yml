@@ -10,19 +10,8 @@ services:
 
   api:
     build: ./api
-    env_file:
-      - ./api/.env
+    env_file: ./api/.env
     ports:
-      - '3344:3000'
       - '8080:8080'
     links:
       - 'db'
-
-  app:
-    build: ./app
-    volumes:
-      - '/tmp:/tmp'
-    environment:
-      - NODE_ENV=production
-    ports:
-      - '8081:80'
