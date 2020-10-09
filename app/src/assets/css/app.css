@@ -1,0 +1,31 @@
+#app-logo {
+  width: 30px;
+}
+
+body #app {
+  height: 100% !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+/* div {
+  padding: 0;
+  margin: 0;
+} */
+
+#form-card {
+  margin-top: 200px;
+  padding: 0;
+  text-align: left;
+}
